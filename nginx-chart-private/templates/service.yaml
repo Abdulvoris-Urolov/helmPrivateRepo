@@ -1,15 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "nginx-chart-private.fullname" . }}
-  labels:
-    {{- include "nginx-chart-private.labels" . | nindent 4 }}
+  name: {{ .Release.Name }}-service
 spec:
+  selector:
+    app.kubernetes.io/instance: {{ .Release.Name }}
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-      name: http
-  selector:
-    {{- include "nginx-chart-private.selectorLabels" . | nindent 4 }}
+    - protocol: {{ .Values.service.protocol | default "TCP" }}
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
