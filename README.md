@@ -1,12 +1,20 @@
 # helmPrivateRepo
 
+#### Helm yaratishni o'rganamiz oddiy nginx uchun helm
 
+Helm ni o'rganishdan oldin bizga kerakli narsalarni to'g'irlab olishimiz kerak.
++ k8s cluster
++ laptopimizga helm o'rnatilgan bo'lishi kerak. O'rnatish uchun 👉 [helm.sh](https://helm.sh/docs/intro/install/) ga bosing.
 
+Birinchi navbatda tepadagi fayllarni to'g'irlab olamiz 
 ```
 $ ls
 nginx-chart-private  README.md
 ```
-
+```
+$ tree
+```
+👆bu buyruqda terminalda quyidagicha qilib ko'rishingiz mumkin, 👇tekshirish uchun!!!
 ```
 .
 ├── nginx-chart-private
