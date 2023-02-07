@@ -155,7 +155,7 @@ metadata:
   name: private-chart
   namespace: default
 data:
-  .dockerconfigjson: #(buyerda siz docker login qilasiz birinchi navbatda va `cat ~/.docker/config.json | base64 -w 0` buyruqni terminaldan terib chiqgan tokenni qoyasiz ushbu comment o'rniga ) 
+  .dockerconfigjson: #(buyerda siz docker login qilasiz birinchi navbatda va `cat ~/.docker/config.json | base64 -w 0` buyruqni terminaldan terib chiqgan tokenni qoyasiz ushbu comment o'rniga) 
 type: kubernetes.io/dockerconfigjson
 ```
 va fayllarimiz to'g'ri yozilganligiga ishonch hosil qilish uchun quyidagi buyruqni yozamiz
