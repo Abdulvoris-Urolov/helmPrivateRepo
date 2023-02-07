@@ -16,6 +16,7 @@ $ tree
 ```
 👆bu buyruqda terminalda quyidagicha qilib ko'rishingiz mumkin, 👇tekshirish uchun!!!
 ```
+$ tree
 .
 ├── nginx-chart-private
 │   ├── charts
